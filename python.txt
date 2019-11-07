@@ -1,0 +1,32 @@
+#emxemple 3:
+def table(p):
+    n=1
+    while n<11:
+        print(n*p, end=" ")
+        n=n+1
+
+for i in range(1,21):
+    table(i)
+    print("\n")
+    
+#exemple 4:    
+def table(p, debut, fin):
+    n=debut
+    for i in range(debut, fin):
+        print(n*p, end=" ")
+        n=n+1
+
+table(5, 5, 10)
+    
+    
+nb = int(input("Saisir un nombre: "))
+
+def estPremier(nombre):
+    for i in range(2, nombre):
+        if nombre%i == 0:
+            return False
+        else:
+            return True
+for i in range (0,nb):
+    if(estPremier(i) == True):
+        print(i)
